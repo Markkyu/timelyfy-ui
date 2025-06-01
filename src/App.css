@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+body {
+    /* backdrop-filter: blur(15px) grayscale(50%);
+    background-image: url('./assets/mseuf_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat; */
+    /* background-color: #e4e4e4; */
+    @apply bg-gray-200
+}
+
+.mainOptions {
+    @apply flex justify-center items-center bg-gray-50 rounded-lg text-3xl 2xl:text-4xl hover:underline shadow-lg;
+}
+
+/* MainMenu.jsx */
+.main-title {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  @apply text-9xl 
+}
