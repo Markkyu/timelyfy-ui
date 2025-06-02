@@ -2,7 +2,7 @@ const List = ({ takeArray, handleDelete, handleEdit, directName, addColor = "red
   return (
     <>
       <div className="w-full max-w-4xl 2xl:max-w-5xl mx-auto">
-        <hr className="text-white mb-4" />
+        <hr className="text-white mb-4 border-2 shadow" />
         {takeArray.length === 0 ? (
           <div className="bg-white/90 rounded-lg shadow p-8 text-center text-xl text-gray-700 font-medium">
             No {directName} added yet.

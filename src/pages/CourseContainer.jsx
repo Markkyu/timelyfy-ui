@@ -29,7 +29,7 @@ const CourseContainer = () => {
 
   return (
     <div className="flex h-screen">
-      <div className="flex flex-1 flex-col items-center p-0 md:p-8 overflow-auto">
+      <div className="flex flex-1 flex-col items-center p-0 md:p-8 overflow-auto bg-gray-300">
         <button
           onClick={handleGoHome}
           className="fixed top-1/2 left-4 transform -translate-y-1/2 z-50 bg-red-800 text-white px-4 py-2 rounded hover:bg-red-900 hover:cursor-pointer shadow-md"
@@ -49,7 +49,7 @@ const CourseContainer = () => {
           borderColorClass="border-blue-300"
         />
 
-        <div className="w-full max-w-4xl 2xl:max-w-5xl mx-auto">
+        <div className="w-full max-w-4xl 2xl:max-w-5xl mx-auto ">
           {departments.length === 0 ? (
             <div className="bg-white/90 rounded-lg shadow p-8 text-center text-lg text-gray-700 font-medium">
               No college folder found. To access a college folder, Add (+) a

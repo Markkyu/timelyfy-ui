@@ -1,7 +1,7 @@
 const AboutPage = () => {
   return (
     <div className="h-dvh bg-white text-gray-800 font-sans overflow-auto">
-      <header className="bg-gray-100 py-12 px-4 text-center shadow-md">
+      <header className="bg-gray-50 py-12 px-4 text-center shadow-md">
         <h1 className="text-4xl font-bold flex items-center justify-center">
           <img src="/euc_logo.png" className="size-10 inline mr-2" />
           Timelyfy
@@ -38,7 +38,8 @@ const AboutPage = () => {
               <img
                 className="w-24 h-24 mx-auto bg-gray-300 rounded-full mb-4"
                 src="https://cdn.pixilart.com/images/user/profile/large/7ad5a882722beee.png?v=1660092107"
-                alt=""
+                alt="Marc Joel Baldoz"
+                title="Marc Joel Baldoz"
               />
               <h4 className="font-medium text-lg text-maroon-800">
                 Marc Joel Baldoz
@@ -47,7 +48,7 @@ const AboutPage = () => {
               <p className="text-sm text-gray-600">User Interface & User Experience</p>
             </div>
             <div className="bg-white shadow rounded-xl p-6 border border-maroon-200">
-              <div className="w-24 h-24 mx-auto bg-gray-300 rounded-full mb-4" />
+              <div className="w-24 h-24 mx-auto bg-gray-300 rounded-full mb-4"  title="Emmanuel Genaro Ona"/>
               <h4 className="font-medium text-lg text-maroon-800">
                 Emmanuel Genaro Ona
               </h4>
