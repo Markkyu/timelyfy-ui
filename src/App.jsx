@@ -11,6 +11,7 @@ import About from "./pages/About.jsx";
 import CollegeList from "./pages/CollegeList.jsx";
 import "./App.css";
 import Scheduler from "./pages/Scheduler.jsx";
+import Tutorial from "./pages/Tutorial.jsx";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="master" element={<CollegeList />} /> 
             <Route path="scheduler" element={<Scheduler />} /> 
+            <Route path="tutorial" element={<Tutorial />} /> 
             <Route path="*" element={<PageNotFound />} />
           </Route>
         </Routes>

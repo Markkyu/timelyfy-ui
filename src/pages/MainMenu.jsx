@@ -28,7 +28,7 @@ function MainMenu() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mt-6">
-                  <Link to="courses" className="flex items-center justify-center gap-2 bg-red-700 hover:bg-red-800 transition-all duration-200 text-white px-6 py-3 rounded-full shadow-md text-lg font-semibold hover:cursor-pointer z-1">
+                  <Link to="scheduler" className="flex items-center justify-center gap-2 bg-red-700 hover:bg-red-800 transition-all duration-200 text-white px-6 py-3 rounded-full shadow-md text-lg font-semibold hover:cursor-pointer z-1">
                     <ChevronRight size={20} />
                     Generate a Schedule
                   </Link>
@@ -67,7 +67,7 @@ function MainMenu() {
               <Info color="#919191" />
             </Link>
             <Link
-              to="about"
+              to="tutorial"
               className="absolute top-2 right-10 hover:cursor-pointer"
             >
               <CircleHelp color="#919191" />
@@ -107,7 +107,7 @@ function MainMenu() {
           </div>
           <div className="hidden 2xl:flex space-x-6 items-end p-2">
             <Link
-              to="/"
+              to="tutorial"
               className="flex items-center bottom-0 text-gray-700 font-medium space-x-1 hover:cursor-pointer hover:underline"
             >
               <CircleHelp size={20} color="#4d4d4d" />
