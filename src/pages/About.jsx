@@ -1,6 +1,6 @@
 const AboutPage = () => {
   return (
-    <div className="h-dvh bg-white text-gray-800 font-sans overflow-auto">
+    <div className="bg-white text-gray-800 font-sans overflow-auto">
       <header className="bg-gray-50 py-12 px-4 text-center shadow-md">
         <h1 className="text-4xl font-bold flex items-center justify-center">
           <img src="/euc_logo.png" className="size-10 inline mr-2" />
@@ -45,10 +45,15 @@ const AboutPage = () => {
                 Marc Joel Baldoz
               </h4>
               <p className="text-sm text-gray-600">Front end Developer</p>
-              <p className="text-sm text-gray-600">User Interface & User Experience</p>
+              <p className="text-sm text-gray-600">
+                User Interface & User Experience
+              </p>
             </div>
             <div className="bg-white shadow rounded-xl p-6 border border-maroon-200">
-              <div className="w-24 h-24 mx-auto bg-gray-300 rounded-full mb-4"  title="Emmanuel Genaro Ona"/>
+              <div
+                className="w-24 h-24 mx-auto bg-gray-300 rounded-full mb-4"
+                title="Emmanuel Genaro Ona"
+              />
               <h4 className="font-medium text-lg text-maroon-800">
                 Emmanuel Genaro Ona
               </h4>
@@ -59,7 +64,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <footer className="bg-maroon-700 text-center py-6 mt-10">
+      <footer className="shadow-2xl text-center py-6 text-gray-800">
         <p>&copy; {new Date().getFullYear()} Timelyfy Auto-scheduler</p>
       </footer>
     </div>

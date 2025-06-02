@@ -97,7 +97,8 @@ const TeacherList = () => {
   const teacherUniqueId = nextId(`teacher-id-`);
 
   return (
-    <div className="flex h-screen">
+    // <div className="flex h-screen">
+    <>
       <div className="flex-1 flex flex-col items-center p-0 md:p-8 overflow-auto">
         <button
           onClick={handleGoHome}
@@ -148,7 +149,8 @@ const TeacherList = () => {
         color="blue"
         title={editIndex !== null ? "Edit Teacher" : "Add Teacher"}
       />
-    </div>
+    </>
+    // </div>
   );
 };
 

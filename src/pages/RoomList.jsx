@@ -80,7 +80,8 @@ const RoomList = () => {
   const roomUniqueId = nextId("room-id-");
 
   return (
-    <div className="flex h-screen">
+    // <div className="flex h-screen">
+    <>
       <div className="flex-1 flex flex-col items-center p-0 md:p-8 overflow-auto">
         <button
           onClick={handleGoHome}
@@ -133,7 +134,8 @@ const RoomList = () => {
         color="blue"
         title={editIndex !== null ? "Edit Room" : "Add Room"}
       />
-    </div>
+    </>
+    // </div>
   );
 };
 

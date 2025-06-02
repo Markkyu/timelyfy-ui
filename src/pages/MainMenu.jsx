@@ -28,10 +28,10 @@ function MainMenu() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mt-6">
-                  <button className="flex items-center justify-center gap-2 bg-red-700 hover:bg-red-800 transition-all duration-200 text-white px-6 py-3 rounded-full shadow-md text-lg font-semibold hover:cursor-pointer z-1">
+                  <Link to="courses" className="flex items-center justify-center gap-2 bg-red-700 hover:bg-red-800 transition-all duration-200 text-white px-6 py-3 rounded-full shadow-md text-lg font-semibold hover:cursor-pointer z-1">
                     <ChevronRight size={20} />
                     Generate a Schedule
-                  </button>
+                  </Link>
                   <Link
                     to=""
                     className="text-red-700 hover:cursor-pointer underline text-lg font-medium self-center sm:self-auto z-1"
