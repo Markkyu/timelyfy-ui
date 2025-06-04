@@ -1,4 +1,4 @@
-import { Link, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   ChevronDown,
   ChevronUp,
@@ -17,7 +17,11 @@ const BottomNav = ({ initialOpened, showButton }) => {
   return (
     <div
       className={`transform transition-all duration-700 ease-in-out flex fixed w-full h-20 bottom-0 justify-evenly bg-gray-100 z-100
-            ${showCards ? "translate-y-0 opacity-100" : "opacity-60 translate-y-30"}
+            ${
+              showCards
+                ? "translate-y-0 opacity-100"
+                : "opacity-60 translate-y-30"
+            }
         `}
     >
       {/* Button */}

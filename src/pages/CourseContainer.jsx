@@ -30,7 +30,7 @@ const CourseContainer = () => {
 
   return (
     // <div className="flex h-dvh">
-      <div className="flex flex-1 flex-col items-center p-0 md:p-8 overflow-auto bg-gray-200">
+      <div className="flex flex-1 flex-col items-center p-6 overflow-auto bg-gray-200">
 
         <MainMenuButton />
 
@@ -58,9 +58,8 @@ const CourseContainer = () => {
                 <div className="flex items-center gap-2 p-4">
                   <img
                     className="size-10 mr-2"
-                    // src="https://cdn-icons-png.flaticon.com/512/3767/3767084.png"
-                    src="https://cdn-icons-png.flaticon.com/128/12075/12075398.png"
-                    // src="https://cdn-icons-png.flaticon.com/128/12075/12075402.png"
+                    src="https://cdn-icons-png.flaticon.com/128/12075/12075398.png" // folder walang laman
+                    // src="https://cdn-icons-png.flaticon.com/128/12075/12075402.png" // Folder may laman
                     alt=""
                   />
                   <h2 className="text-xl font-semibold text-gray-900">

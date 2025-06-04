@@ -83,7 +83,7 @@ const RoomList = () => {
 
   return (
     <>
-      <div className="flex flex-col relative p-0 overflow-auto bg-gray-200">
+      <div className="flex flex-col relative p-6 overflow-auto bg-gray-200">
 
         <MainMenuButton />
 
@@ -128,7 +128,7 @@ const RoomList = () => {
         title={editIndex !== null ? "Edit Room" : "Add Room"}
       />
 
-      {/* <BottomNav initialOpened={false} showButton={true} /> */}
+      <BottomNav initialOpened={false} showButton={true} />
     </>
   );
 };

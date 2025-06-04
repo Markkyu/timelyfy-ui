@@ -100,7 +100,7 @@ const TeacherList = () => {
 
   return (
     <>
-      <div className="flex-1 flex flex-col items-center p-0 md:p-8 overflow-auto bg-gray-200">
+      <div className="flex-1 flex flex-col items-center p-6 overflow-auto bg-gray-200">
         <MainMenuButton />
 
         <PageHeader
@@ -143,7 +143,7 @@ const TeacherList = () => {
         title={editIndex !== null ? "Edit Teacher" : "Add Teacher"}
       />
 
-      {/* <BottomNav initialOpened={false} showButton={true} /> */}
+      <BottomNav initialOpened={false} showButton={true} />
     </>
   );
 };
