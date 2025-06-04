@@ -28,7 +28,10 @@ function MainMenu() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mt-6">
-                  <Link to="scheduler" className="flex items-center justify-center gap-2 bg-red-700 hover:bg-red-800 transition-all duration-200 text-white px-6 py-3 rounded-full shadow-md text-lg font-semibold hover:cursor-pointer z-1">
+                  <Link
+                    to="scheduler"
+                    className="flex items-center justify-center gap-2 bg-red-700 hover:bg-red-800 transition-all duration-200 text-white px-6 py-3 rounded-full shadow-md text-lg font-semibold hover:cursor-pointer z-1"
+                  >
                     <ChevronRight size={20} />
                     Generate a Schedule
                   </Link>
@@ -45,7 +48,6 @@ function MainMenu() {
               <div className="flex justify-center">
                 <img
                   src="https://cdni.iconscout.com/illustration/premium/thumb/scheduling-timetable-illustration-download-in-svg-png-gif-file-formats--task-management-time-business-planning-schedule-effective-artistry-pack-people-illustrations-5295176.png?f=webp"
-                  // src="https://cdni.iconscout.com/illustration/premium/thumb/project-submission-time-illustration-download-in-svg-png-gif-file-formats--on-clock-design-and-development-pack-illustrations-2107744.png?f=webp"
                   alt="Scheduling Illustration"
                   className="w-full max-w-md z-1"
                 />
@@ -105,6 +107,7 @@ function MainMenu() {
               <Settings size={30} />
             </Card>
           </div>
+
           <div className="hidden 2xl:flex space-x-6 items-end p-2">
             <Link
               to="tutorial"

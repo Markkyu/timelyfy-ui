@@ -6,7 +6,7 @@ const PageHeader = ({
   borderColorClass,
 }) => {
   return (
-    <div className="sticky top-0 w-full max-w-4xl 2xl:max-w-5xl flex items-center bg-white shadow-lg rounded-xl p-6 mt-8 mb-6 mx-auto z-5">
+    <div className="sticky top-0 w-full max-w-4xl 2xl:max-w-5xl flex items-center bg-white shadow rounded-xl p-6 mt-8 mb-6 mx-auto z-5">
       <img
         className={`2xl:absolute h-16 w-16 rounded-full border-2 ${borderColorClass} shadow`}
         src={logoUrl}

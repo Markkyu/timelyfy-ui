@@ -1,6 +1,9 @@
+import MainMenuButton from "../components/MainMenuButton";
+
 const AboutPage = () => {
   return (
     <div className="bg-white text-gray-800 font-sans overflow-auto">
+      <MainMenuButton />
       <header className="bg-gray-50 py-12 px-4 text-center shadow-md">
         <h1 className="text-4xl font-bold flex items-center justify-center">
           <img src="/euc_logo.png" className="size-10 inline mr-2" />

@@ -5,7 +5,8 @@ import PageHeader from "../components/PageHeader";
 import FloatingButton from "../components/FloatingButton";
 import FormPopup from "../components/FormPopup";
 import List from "../components/List";
-import { MoveLeft } from "lucide-react";
+import { ChevronLeft, MoveLeft } from "lucide-react";
+import MainMenuButton from "../components/MainMenuButton";
 
 const LOGO_URL =
   "https://mseufcandelaria.neolms.com/files/6191249/euC.png?lmsauth=6b113bc54de2f357d219b0c3ca81063c295c6955";
@@ -99,16 +100,8 @@ const TeacherList = () => {
   return (
     // <div className="flex h-screen">
     <>
-      <div className="flex-1 flex flex-col items-center p-0 md:p-8 overflow-auto">
-        <button
-          onClick={handleGoHome}
-          className="fixed top-1/2 left-4 transform -translate-y-1/2 z-50 bg-red-800 text-white px-4 py-2 rounded hover:bg-red-900 hover:cursor-pointer shadow-md"
-        >
-          <div className="flex items-center">
-            <MoveLeft className="inline mr-2" />
-            Main Menu
-          </div>
-        </button>
+      <div className="flex-1 flex flex-col items-center p-0 md:p-8 overflow-auto bg-gray-200">
+        <MainMenuButton />
 
         <PageHeader
           logoUrl={LOGO_URL}

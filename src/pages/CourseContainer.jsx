@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import PageHeader from "../components/PageHeader";
-import { MoveLeft } from "lucide-react";
+import { ChevronLeft, MoveLeft } from "lucide-react";
 import { useEffect, useState } from "react";
+import MainMenuButton from "../components/MainMenuButton";
 
 const LOGO_URL =
   "https://mseufcandelaria.neolms.com/files/6191249/euC.png?lmsauth=6b113bc54de2f357d219b0c3ca81063c295c6955";
@@ -29,17 +30,9 @@ const CourseContainer = () => {
 
   return (
     // <div className="flex h-dvh">
-      <div className="flex flex-1 flex-col items-center p-0 md:p-8 overflow-auto bg-gray-300">
-        <button
-          onClick={handleGoHome}
-          className="fixed top-1/2 left-4 transform -translate-y-1/2 z-50 bg-red-800 text-white px-4 py-2 rounded hover:bg-red-900 hover:cursor-pointer shadow-md"
-        >
-          <div className="flex items-center">
-            <MoveLeft className="inline mr-2" />
-            Main Menu
-          </div>
-        </button>
+      <div className="flex flex-1 flex-col items-center p-0 md:p-8 overflow-auto bg-gray-200">
 
+        <MainMenuButton />
 
         <PageHeader
           logoUrl={LOGO_URL}
@@ -65,7 +58,9 @@ const CourseContainer = () => {
                 <div className="flex items-center gap-2 p-4">
                   <img
                     className="size-10 mr-2"
-                    src="https://cdn-icons-png.flaticon.com/512/3767/3767084.png"
+                    // src="https://cdn-icons-png.flaticon.com/512/3767/3767084.png"
+                    src="https://cdn-icons-png.flaticon.com/128/12075/12075398.png"
+                    // src="https://cdn-icons-png.flaticon.com/128/12075/12075402.png"
                     alt=""
                   />
                   <h2 className="text-xl font-semibold text-gray-900">

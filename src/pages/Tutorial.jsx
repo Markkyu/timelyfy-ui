@@ -1,5 +1,6 @@
 import { ChevronLeft, NotebookPen, Settings } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import MainMenuButton from "../components/MainMenuButton";
 
 const steps = [
   {
@@ -41,30 +42,21 @@ const steps = [
     title: "Manual Override",
     icon: <Settings className="inline-block mr-2" />,
     description:
-      "The user always have the option of manual adjustments if the schedule is not fit to their setup.",
+      "The user always has the option of manual adjustments if the schedule is not fit to their setup.",
   },
 ];
 
 const Tutorial = () => {
+  const navigate = useNavigate();
 
-    const navigate = useNavigate()
-
-const handleGoHome = () => {
-    navigate("/")
-}
+  const handleGoHome = () => {
+    navigate("/");
+  };
 
   return (
     <div className="bg-gray-200 overflow-auto">
-
-        <button
-          onClick={handleGoHome}
-          className="fixed top-1/2 left-4 transform -translate-y-1/2 z-50 bg-red-800 text-white px-4 py-2 rounded-full hover:bg-red-900 hover:cursor-pointer shadow-lg"
-        >
-          <div className="flex items-center font-medium">
-            <ChevronLeft className="inline" />
-            Home
-          </div>
-        </button>
+      
+      <MainMenuButton />
 
       {/* Content */}
       <div className="max-w-4xl mx-auto px-6 py-12 space-y-8">
