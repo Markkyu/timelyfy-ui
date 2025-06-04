@@ -7,6 +7,7 @@ import FormPopup from "../components/FormPopup";
 import List from "../components/List";
 import { ChevronLeft, MoveLeft } from "lucide-react";
 import MainMenuButton from "../components/MainMenuButton";
+import BottomNav from "../components/BottomNav";
 
 const LOGO_URL =
   "https://mseufcandelaria.neolms.com/files/6191249/euC.png?lmsauth=6b113bc54de2f357d219b0c3ca81063c295c6955";
@@ -98,7 +99,6 @@ const TeacherList = () => {
   const teacherUniqueId = nextId(`teacher-id-`);
 
   return (
-    // <div className="flex h-screen">
     <>
       <div className="flex-1 flex flex-col items-center p-0 md:p-8 overflow-auto bg-gray-200">
         <MainMenuButton />
@@ -142,8 +142,9 @@ const TeacherList = () => {
         color="blue"
         title={editIndex !== null ? "Edit Teacher" : "Add Teacher"}
       />
+
+      {/* <BottomNav initialOpened={false} showButton={true} /> */}
     </>
-    // </div>
   );
 };
 

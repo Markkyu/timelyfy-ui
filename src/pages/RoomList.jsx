@@ -7,6 +7,7 @@ import List from "../components/List";
 import FormPopup from "../components/FormPopup";
 import { ChevronLeft, MoveLeft } from "lucide-react";
 import MainMenuButton from "../components/MainMenuButton";
+import BottomNav from "../components/BottomNav";
 
 const LOGO_URL =
   "https://mseufcandelaria.neolms.com/files/6191249/euC.png?lmsauth=6b113bc54de2f357d219b0c3ca81063c295c6955";
@@ -81,9 +82,8 @@ const RoomList = () => {
   const roomUniqueId = nextId("room-id-");
 
   return (
-    // <div className="flex h-screen">
     <>
-      <div className="flex-1 flex flex-col items-center p-0 md:p-8 overflow-auto bg-gray-200">
+      <div className="flex flex-col relative p-0 overflow-auto bg-gray-200">
 
         <MainMenuButton />
 
@@ -127,8 +127,9 @@ const RoomList = () => {
         color="blue"
         title={editIndex !== null ? "Edit Room" : "Add Room"}
       />
+
+      {/* <BottomNav initialOpened={false} showButton={true} /> */}
     </>
-    // </div>
   );
 };
 

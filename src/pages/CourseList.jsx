@@ -108,18 +108,8 @@ const CourseList = () => {
   const uniqueIdGen = nextId(`course-id-`); //re-renders everytime an action is made in this particular pages component
 
   return (
-    // <div className="flex h-screen">
     <>
       <div className="flex-1 flex flex-col items-center p-0 md:p-8 overflow-auto">
-        
-        {/* <button
-          onClick={() => navigate(-1)}
-          className="fixed top-1/2 left-4 transform -translate-y-1/2 z-50 bg-red-800 text-white px-4 py-2 rounded-full hover:bg-red-900 hover:cursor-pointer shadow-md"
-        >
-          <ChevronLeft className="inline" />
-          Back
-        </button> */}
-
         <BackButton />
 
         <PageHeader
@@ -172,7 +162,6 @@ const CourseList = () => {
         title={editIndex !== null ? "Edit Course" : "Add Course"}
       />
     </>
-    // </div>
   );
 };
 

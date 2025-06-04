@@ -4,19 +4,16 @@ import {
   CircleHelp,
   Info,
   Notebook,
-  School,
-  Settings,
-  Users,
 } from "lucide-react";
-import Card from "../components/Card";
+import BottomNav from "../components/BottomNav";
 
 function MainMenu() {
   return (
     <>
-      <div className="container-fluid h-dvh flex flex-col">
-        <div className="flex flex-7 relative bg-gray-300">
+      <div className="container-fluid h-dvh flex flex-col relative">
+        <div className="flex grow-1 relative bg-gray-300">
           <div className="w-full flex justify-center items-center bg-gradient-to-br from-gray-50 to-gray-300 py-20 px-4 relative overflow-hidden">
-            <div className="max-w-6xl w-full grid md:grid-cols-2 items-center gap-12 z-10">
+            <div className="max-w-6xl grid grid-cols-2 items-center gap-12 z-10 pb-15">
               <div className="text-center md:text-left space-y-6">
                 <h1 className="text-5xl 2xl:text-6xl font-extrabold text-gray-800 leading-tight tracking-tight">
                   Creating schedules with Timelyfy
@@ -61,7 +58,7 @@ function MainMenu() {
             </div>
           </div>
 
-          <div className="2xl:hidden">
+          <div>
             <Link
               to="about"
               className="absolute top-2 right-2 hover:cursor-pointer"
@@ -77,54 +74,7 @@ function MainMenu() {
           </div>
         </div>
 
-        <div className="flex flex-1 relative justify-evenly bg-gray-100">
-          <div className="absolute inset-x-0 -top-10 flex justify-center gap-6 px-4 z-10">
-            <Card
-              title="Course List"
-              description="Go to course directory"
-              path_direct="courses"
-            >
-              <Notebook size={30} />
-            </Card>
-
-            <Card
-              title="Classroom List"
-              description="Go to room list directory"
-              path_direct="rooms"
-            >
-              <School size={30} />
-            </Card>
-
-            <Card
-              title="Teacher List"
-              description="Go to teacher directory"
-              path_direct="teachers"
-            >
-              <Users size={30} />
-            </Card>
-
-            <Card title="Settings" description="Go to settings">
-              <Settings size={30} />
-            </Card>
-          </div>
-
-          <div className="hidden 2xl:flex space-x-6 items-end p-2">
-            <Link
-              to="tutorial"
-              className="flex items-center bottom-0 text-gray-700 font-medium space-x-1 hover:cursor-pointer hover:underline"
-            >
-              <CircleHelp size={20} color="#4d4d4d" />
-              <span>Tutorial</span>
-            </Link>
-            <Link
-              to="about"
-              className="flex items-center bottom-0 text-gray-700 font-medium space-x-1 hover:cursor-pointer hover:underline"
-            >
-              <Info size={20} color="#4d4d4d" />
-              <span>About</span>
-            </Link>
-          </div>
-        </div>
+        <BottomNav initialOpened={true} showButton={false}/>
       </div>
     </>
   );
