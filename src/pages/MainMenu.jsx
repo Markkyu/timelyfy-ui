@@ -11,9 +11,9 @@ function MainMenu() {
   return (
     <>
       <div className="container-fluid h-dvh flex flex-col relative">
-        <div className="flex grow-1 relative bg-gray-300">
-          <div className="w-full flex justify-center items-center bg-gradient-to-br from-gray-50 to-gray-300 py-20 px-4 relative overflow-hidden">
-            <div className="max-w-6xl grid grid-cols-2 items-center gap-12 z-10 pb-15">
+        <div className="flex grow-1 relative">
+          <div className="w-full flex justify-center items-center bg-gradient-to-br from-gray-50 to-gray-300 px-4 relative overflow-hidden">
+            <div className="max-w-6xl grid grid-cols-2 items-center gap-12 z-10">
               <div className="text-center md:text-left space-y-6">
                 <h1 className="text-5xl 2xl:text-6xl font-extrabold text-gray-800 leading-tight tracking-tight">
                   Creating schedules with Timelyfy
